@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class MTv1 {
 	
-	private NextDate trialDate = new NextDate(3,4,1976);
+	private NDv12 trialDate = new NDv12(3,4,1976);
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
@@ -19,16 +19,18 @@ public class MTv1 {
 	
 	@Test
 	public final void testJuneToJuly(){
-	assertEquals("7/1/2001", trialDate.run(6, 30, 2001));
+		assertEquals("7/1/2001", trialDate.run(6, 30, 2001));
 	}
 	
 	@Test
 	public final void testMarchToApril(){
-	assertEquals("4/1/2001", trialDate.run(3, 31, 2001));
+		assertEquals("4/1/2001", trialDate.run(3, 31, 2001));
 	}
 
 	@Test
-	public final void testDecemberToJanuary(){ assertEquals("Invalid Next Year", trialDate.run(12, 31, 2021)); }
+	public final void testDecemberToJanuary(){
+		assertEquals("Invalid Next Year", trialDate.run(12, 31, 2021));
+	}
 
 	@Test
 	public final void testLeapYear(){
