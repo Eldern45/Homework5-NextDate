@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MTv1 {
 	
 	//private NDv12 trialDate = new NDv12(3,4,1976);
-	private NDv2 trialDate = new NDv2(3,4,1976);
+	private NDv21 trialDate = new NDv21(3,4,1976);
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
